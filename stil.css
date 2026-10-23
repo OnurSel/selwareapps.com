@@ -130,6 +130,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
 .uyg-bas.acik .rozet{background:rgba(0,0,0,.08)}
 .galeri{display:flex;gap:16px;overflow-x:auto;margin:44px -48px 0;padding:0 48px 48px;scroll-snap-type:x mandatory;scrollbar-width:thin}
 .galeri img{flex:none;width:240px;height:auto;border-radius:18px;scroll-snap-align:start;box-shadow:0 20px 40px -24px rgba(0,0,0,.8)}
+.galeri img.yatay{width:560px;border-radius:14px}
 .uyg-govde{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;margin-top:64px}
 .uyg-govde h2{font:800 28px var(--baslik);letter-spacing:-.025em;margin-bottom:14px}
 .uyg-govde p{font-size:18px;color:var(--yazi2);margin-bottom:16px;max-width:36em}
@@ -237,6 +238,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
   .uyg-bas.acik.galerili{padding-bottom:0}
   .galeri{margin:34px -22px 0;padding:0 22px 30px}
   .galeri img{width:200px}
+  .galeri img.yatay{width:calc(100vw - 64px);max-width:440px}
   .ozellik{grid-template-columns:1fr}
   .ust-serit .kap{height:70px}
   .ust-serit nav a{padding:8px 10px}
