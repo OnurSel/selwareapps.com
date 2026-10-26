@@ -128,7 +128,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
 .uyg-bas .dugmeler{margin-top:26px}
 .uyg-bas .rozet{margin-left:0}
 .uyg-bas.acik .rozet{background:rgba(0,0,0,.08)}
-.galeri{display:flex;gap:16px;overflow-x:auto;margin:44px -48px 0;padding:0 48px 48px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.galeri-kap{position:relative}
+.galeri{display:flex;gap:16px;overflow-x:auto;margin:44px -48px 0;padding:0 48px 48px;scroll-padding-inline:48px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.galeri::-webkit-scrollbar{display:none}
+.galeri-ok{position:absolute;top:calc(50% - 24px);transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.94);box-shadow:0 6px 18px -6px rgba(0,0,0,.45);cursor:pointer;display:grid;place-items:center;transition:transform .15s,background .15s}
+.galeri-ok[hidden]{display:none}
+.galeri-ok:hover{background:#fff;transform:translateY(-50%) scale(1.07)}
+.galeri-ok:focus-visible{outline:3px solid var(--vurgu);outline-offset:2px}
+.galeri-ok::before{content:"";width:10px;height:10px;border-top:2.5px solid #1A1A1A;border-right:2.5px solid #1A1A1A}
+.galeri-ok.sol{left:-30px}.galeri-ok.sol::before{transform:translateX(2px) rotate(-135deg)}
+.galeri-ok.sag{right:-30px}.galeri-ok.sag::before{transform:translateX(-2px) rotate(45deg)}
 .galeri img{flex:none;width:240px;height:auto;border-radius:18px;scroll-snap-align:start;box-shadow:0 20px 40px -24px rgba(0,0,0,.8)}
 .galeri img.yatay{width:560px;border-radius:14px}
 .uyg-govde{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;margin-top:64px}
@@ -236,7 +245,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
   .uyg-bas{padding:30px 22px 0;border-radius:24px}
   .uyg-bas.acik{padding-bottom:30px}
   .uyg-bas.acik.galerili{padding-bottom:0}
-  .galeri{margin:34px -22px 0;padding:0 22px 30px}
+  .galeri{margin:34px -22px 0;padding:0 22px 30px;scroll-padding-inline:22px}
+  .galeri-ok{width:36px;height:36px;top:calc(50% - 15px)}
+  .galeri-ok.sol{left:-14px}.galeri-ok.sag{right:-14px}
   .galeri img{width:200px}
   .galeri img.yatay{width:calc(100vw - 64px);max-width:440px}
   .ozellik{grid-template-columns:1fr}
