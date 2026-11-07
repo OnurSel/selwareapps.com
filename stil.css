@@ -38,14 +38,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
 @media (prefers-reduced-motion:reduce){.el{animation:none}html{scroll-behavior:auto}}
 .giris p{font-size:20px;max-width:32em;margin-top:30px;color:var(--yazi2)}
 .yigin{position:relative;width:300px;height:250px;flex:none}
-.yigin img{position:absolute;width:96px;height:96px;border-radius:23px;box-shadow:0 16px 28px -16px rgba(0,0,0,.5);border:4px solid #fff;transition:transform .3s ease}
-.yigin img:nth-child(1){left:0;top:14px;transform:rotate(-8deg)}
-.yigin img:nth-child(2){left:102px;top:0;transform:rotate(5deg)}
-.yigin img:nth-child(3){left:204px;top:18px;transform:rotate(-4deg)}
-.yigin img:nth-child(4){left:18px;top:122px;transform:rotate(6deg)}
-.yigin img:nth-child(5){left:118px;top:112px;transform:rotate(-6deg)}
-.yigin img:nth-child(6){left:210px;top:130px;transform:rotate(9deg)}
-.yigin:hover img{transform:rotate(0) translateY(-4px)}
+.yigin a{position:absolute;display:block;width:96px;height:96px;border-radius:23px;box-shadow:0 16px 28px -16px rgba(0,0,0,.5);transition:transform .3s ease}
+.yigin a img{display:block;width:100%;height:100%;border-radius:23px;border:4px solid #fff;object-fit:cover}
+.yigin a:nth-child(1){left:0;top:14px;transform:rotate(-8deg)}
+.yigin a:nth-child(2){left:102px;top:0;transform:rotate(5deg)}
+.yigin a:nth-child(3){left:204px;top:18px;transform:rotate(-4deg)}
+.yigin a:nth-child(4){left:18px;top:122px;transform:rotate(6deg)}
+.yigin a:nth-child(5){left:118px;top:112px;transform:rotate(-6deg)}
+.yigin a:nth-child(6){left:210px;top:130px;transform:rotate(9deg)}
+.yigin:hover a{transform:rotate(0) translateY(-4px)}
+.yigin a:hover,.yigin a:focus-visible{transform:rotate(0) translateY(-10px) scale(1.06);z-index:2}
+.yigin a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
 .foto{width:250px;height:300px;border-radius:24px;object-fit:cover;transform:rotate(3deg);border:6px solid #fff;box-shadow:0 20px 40px -22px rgba(0,0,0,.5)}
 
 /* bölüm başlığı */
