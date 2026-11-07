@@ -281,3 +281,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
 .uyg-demo{margin:34px 0 8px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.22);box-shadow:0 18px 50px rgba(0,0,0,.22);max-width:760px}
 .uyg-demo video{display:block;width:100%;height:auto}
 @media (max-width:920px){.hk-kart.genis .hk-video video{height:auto}}
+
+.cv-kap{padding-top:28px;padding-bottom:40px}
+.cv-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.cv-geri{font-weight:700;text-decoration:none;color:inherit;opacity:.8}
+.cv-dil{display:inline-flex;border:1.5px solid var(--yazi);border-radius:12px;overflow:hidden}
+.cv-dil button{font:inherit;font-size:14px;font-weight:700;padding:9px 16px;background:transparent;color:var(--yazi);border:0;cursor:pointer}
+.cv-dil button[aria-selected="true"]{background:var(--yazi);color:#fff}
+.cv-sag{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.cv-pdf{display:block;width:100%;height:calc(100vh - 210px);min-height:560px;border:1px solid rgba(0,0,0,.15);border-radius:14px;background:#fff}
+@media (max-width:640px){.cv-sag{margin-left:0;width:100%}.cv-pdf{height:70vh}}

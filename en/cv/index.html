@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Résumé · Selware</title>
+<meta name="description" content="Onur Sel&#x27;s résumé (CV). The Turkish and English versions open on the page and can be downloaded as PDF.">
+<link rel="canonical" href="https://selwareapps.com/en/cv/">
+<link rel="alternate" hreflang="en" href="https://selwareapps.com/en/cv/">
+<link rel="alternate" hreflang="tr" href="https://selwareapps.com/cv/">
+<link rel="alternate" hreflang="x-default" href="https://selwareapps.com/cv/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Selware">
+<meta property="og:title" content="Résumé · Selware">
+<meta property="og:description" content="Onur Sel&#x27;s résumé (CV). The Turkish and English versions open on the page and can be downloaded as PDF.">
+<meta property="og:url" content="https://selwareapps.com/en/cv/">
+<meta property="og:image" content="https://selwareapps.com/selware-512.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAF7">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fontlar/fontlar.css" as="style">
+<link rel="stylesheet" href="/fontlar/fontlar.css">
+<link rel="stylesheet" href="/stil.css">
+<script src="/eposta.js" defer></script>
+</head>
+<body>
+<a class="atla" href="#icerik">Skip to content</a>
+<header class="ust-serit"><div class="kap">
+  <a class="marka" href="/en/"><img src="/selware-96.png" alt="" width="36" height="36">Selware</a>
+  <nav aria-label="Home"><a href="/en/#uygulamalar" class="gorunmez-dar">Apps</a><a href="/en/about/" aria-current="page">About</a><a class="dil" href="/cv/" hreflang="tr" lang="tr" title="Türkçe">TR</a></nav>
+</div></header>
+<main id="icerik">
+
+<div class="kap cv-kap">
+  <div class="cv-bar">
+    <a class="cv-geri" href="/en/about/">← About</a>
+    <div class="cv-dil" role="tablist" aria-label="Résumé">
+      <button type="button" role="tab" data-dosya="Onur_Sel_CV_Turkce.pdf" aria-selected="false">Türkçe</button>
+      <button type="button" role="tab" data-dosya="Onur_Sel_CV_English.pdf" aria-selected="true">English</button>
+    </div>
+    <span class="cv-sag">
+      <a class="dugme ince" id="cv-ac" href="/cv/Onur_Sel_CV_English.pdf" target="_blank" rel="noopener">Open PDF in new tab</a>
+      <a class="dugme koyu" id="cv-indir" href="/cv/Onur_Sel_CV_English.pdf" download>Download CV</a>
+    </span>
+  </div>
+  <object id="cv-pdf" class="cv-pdf" data="/cv/Onur_Sel_CV_English.pdf#toolbar=0&navpanes=0" type="application/pdf" aria-label="Résumé">
+    <p>Your browser can&#x27;t show the PDF inline. <a href="/cv/Onur_Sel_CV_English.pdf">PDF</a></p>
+  </object>
+</div>
+<script>
+(function(){
+  var sek=document.querySelectorAll('.cv-dil button'),obj=document.getElementById('cv-pdf'),
+      ind=document.getElementById('cv-indir'),ac=document.getElementById('cv-ac');
+  function sec(d){
+    var u='/cv/'+d;
+    obj.setAttribute('data',u+'#toolbar=0&navpanes=0');
+    var k=obj.cloneNode(true);k.setAttribute('data',u+'#toolbar=0&navpanes=0');obj.parentNode.replaceChild(k,obj);obj=k;
+    ind.href=u;ac.href=u;
+    sek.forEach(function(b){b.setAttribute('aria-selected',b.getAttribute('data-dosya')===d?'true':'false');});
+  }
+  sek.forEach(function(b){b.addEventListener('click',function(){sec(b.getAttribute('data-dosya'));});});
+})();
+</script>
+</main>
+<footer class="alt-serit"><div class="kap">
+  <span>© 2026 Selware · Onur Sel</span>
+  <a href="mailto:selwareapps@gmail.com">selwareapps@gmail.com</a>
+  <span class="sag"><a href="/en/privacy/">Privacy policies</a><a href="https://www.instagram.com/selwareapps/">Instagram</a><a href="https://www.tiktok.com/@selwareapps">TikTok</a><a href="https://github.com/OnurSel">GitHub</a><a href="https://www.linkedin.com/in/onur-sel-16476829b/">LinkedIn</a></span>
+</div></footer>
+</body>
+</html>
