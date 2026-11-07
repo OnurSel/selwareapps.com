@@ -272,3 +272,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--odak);outline-offse
 .posta-kutu p b{color:var(--yazi);font-weight:600;font-size:14px}
 .posta-kutu a{display:block;padding:9px 10px;border-radius:10px;text-decoration:none;font-size:15px;font-weight:500;color:var(--yazi)}
 .posta-kutu a:hover,.posta-kutu a:focus-visible{background:#EFEDE7;outline:none}
+
+/* proje kartında ve uygulama sayfasında canlı demo videosu */
+.hk-gorsel video{display:block;width:100%;height:auto;background:#e9efe5}
+.hk-kart.genis .hk-video{min-height:0;align-self:stretch;display:flex;background:#e9efe5}
+.hk-kart.genis .hk-video video{height:100%;object-fit:contain}
+.hk-demo{display:inline-block;margin-right:16px;font-weight:700}
+.uyg-demo{margin:34px 0 8px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.22);box-shadow:0 18px 50px rgba(0,0,0,.22);max-width:760px}
+.uyg-demo video{display:block;width:100%;height:auto}
+@media (max-width:920px){.hk-kart.genis .hk-video video{height:auto}}
